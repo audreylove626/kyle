@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<script>
+
+function switchText(){
+    var randomWords = ["rip", "yupp", "tea"];
+
+    var randomIndex = Math.floor(Math.random() * 3);//creates random No. from 1 - 3
+
+    document.getElementById("randomText").innerHTML = randomWords[randomIndex];
+    //the problem
+}
+
+</script>
+</head>
+<body>
+
+<h1>Talking to Kyle Simulator</h1>
+
+<table>
+<tr>
+
+<td>
+<input type="text" id="text">
+</td>
+
+<td>
+<button onclick="switchText()">what will he say?</button>
+</td>
+
+</tr>
+</table>
+
+<p id="randomText">
+</p>
+
+</body>
+</html>
